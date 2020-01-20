@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas Drawing App</title>
+    <script src="https://kit.fontawesome.com/08b430f50b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <canvas></canvas>
+    <main>
+        <section class="uploadPicture">
+            <label for="upload-file" id="file-label"><i class="fas fa-file-upload" title="Upload File"></i></label>
+            <input class="mdl-textfield__input" type="file" id="upload-file">
+        </section>
+        <section class="colors">
+            <input type="text" class="color-picker" value="#171717" />
+        </section>
+        <section class="thickness">
+            <input type="number" class="stroke-weight" value="3" />
+        </section>
+        <button class="clear">X</button>
+
+        <section class="filtersANDeffects">
+            <input type="range" min="0" max="200" value="100" class="slider" id="brightnessRange" title="Brightness">
+            <input type="range" min="0" max="200" value="100" class="slider" id="contrastRange" title="Contrast">
+            <input type="range" min="0" max="100" value="0" class="slider" id="blurRange" title="Blur">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
