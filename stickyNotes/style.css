@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(185, 214, 196);
+}
+
+.sticker {
+    padding-top: 20px;
+    background: white;
+    min-height: 150px;
+    min-width: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid rgb(102, 184, 36);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sticker .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    background: rgb(138, 221, 66);
+    width: 100%;
+}
+
+.sticker textarea {
+    padding: 3px 10px;
+    box-sizing: border-box;
+    min-height: 150px;
+    min-width: 100px;
+    background: transparent;
+    border: none;
+}
+
+.sticker .bar:hover {
+    cursor: move;
+    background: rgb(168, 250, 96);
+}
+
+.deleteButton {
+    background-color: crimson;
+    border: none;
+    position: absolute;   
+    top: 2px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
