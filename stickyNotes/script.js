@@ -60,10 +60,6 @@
           }
         };
       };
-   
-    onAddNoteButtonClick = function() {
-      createNote();
-    };  
 
     createNote = function (options) {
       var stickerEl = document.createElement('div'),
@@ -125,6 +121,10 @@
       
       document.body.appendChild(stickerEl);
     };
+
+    onAddNoteButtonClick = function() {
+      createNote();
+    }
     
     testLocalStorage = function() {
       var bla = "bla";
@@ -173,7 +173,7 @@
       }
   
       addNoteBtnEl = document.querySelector('.addNoteBtn');
-      addNoteBtnEl.addEventListener('click', onAddNoteBtnClick, false);
+      addNoteBtnEl.addEventListener('click', onAddNoteButtonClick, false);
       document.addEventListener('mousemove', onDrag, false);
       document.addEventListener('mouseup', onDragEnd, false);
     };
