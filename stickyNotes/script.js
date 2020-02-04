@@ -49,10 +49,11 @@
     };
 
     getNoteObject = function (el) {
-        var textarea = el.querySelector('textarea');
+        var textarea = el.querySelector('textarea');    
         return {
           transformCSSValue: el.style.transform,
           content: textarea.value,
+          color: el.style.borderColor.value,
           id: el.id,
           textarea: {
             width: textarea.style.width,
@@ -75,6 +76,7 @@
             content: '',
             id: "sticker_" + new Date().getTime(),
             transformCSSValue: "translateX(" + Math.random() * 400 + "px) translateY(" + Math.random() * 400 + "px)",
+            color: chooseColorEl.value,
           };
 
       onDelete = function () {    
