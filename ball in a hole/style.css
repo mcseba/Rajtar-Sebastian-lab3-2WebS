@@ -1,0 +1,86 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: repeat;
+    background-size: cover;  
+}
+
+#startButton {
+    position: relative;
+    top: 19%;
+    left: 8%;
+    font-size: 15px;
+    border-radius: 20%;
+    background-image: linear-gradient(to right, rgb(158, 230, 76), rgb(42, 173, 42));
+}
+
+#timer {
+    background-color: transparent;
+    background-image: url("time.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+    border: none;
+    position: absolute; 
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 16%;
+    left: 45%;
+}
+
+#czas {
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: 1%;
+    font-size: 16px;
+}
+
+.timeContainer {
+    border: 2px solid red;
+    position: absolute;
+    left: 35%;
+    background-color: ivory;
+    height: 6vh;
+    width: 250px;
+    padding: 3px;
+}
+
+.ball {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: rgb(35,37,75);
+    background: linear-gradient(90deg, rgba(35,37,75,1) 0%, rgba(85,63,130,1) 46%, rgba(165,225,237,1) 100%);
+    top: 10px;
+    position: absolute;
+    left: 10px;
+}
+
+.hole, .goodHole {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.hole {
+    background: black;
+}
+
+.goodHole {
+    background: green;
+}
+
+.container {
+    background-color: antiquewhite;
+    position: absolute;
+    width: 60%;
+    height: 85vh;
+    top: 10vh; 
+    left: 20%;
+    right: 20%;
+    z-index: -2;
+}
